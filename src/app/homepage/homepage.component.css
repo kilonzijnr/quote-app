@@ -1,14 +1,17 @@
 div {
-    background: url("../../assets/images/cristofer-maximilian-NSKP7Gwa_I0-unsplash.jpg") no-repeat;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
+   background-color: gray;
+   background-size: contain;
+   width: 100%;
+   height: 130vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
 }
 h1{
     text-align: center;
     margin-top: 100px;
+    color: white;
+    text-shadow: yellow;
 }
 p{
     text-align: center;
