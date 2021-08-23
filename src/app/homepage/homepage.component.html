@@ -1,4 +1,5 @@
-<div>
+<body>
+  <body>
   <h1>Quote Hub</h1>
   <p>
     "The ultimate measure of a man is not where he stands in moments of comfort
@@ -14,10 +15,18 @@
     We all have wise words to share so feel free to share with us afew words of
     encouragement.
   </p>
+  <hr>
   <ul>
-    <li *ngFor='let quotes of quotes ; let i =index'>
+    <div *ngFor='let Quote of quotes;let i = index'>
+      <ul>
+      <li>{{Quote.name}} </li>
+      <button (click)= 'toggleDetails(i)'class="btn btn-primary">Details</button>
+      <div *ngIf ='Quote.showDetails'>
+        <app-quotedetail [quote]='Quote'></app-quotedetail>
+      </div>
       
-
-    </li>
-  </ul>
+</ul>
 </div>
+</ul>
+</body>
+   
