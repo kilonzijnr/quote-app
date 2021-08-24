@@ -1,6 +1,7 @@
-form{
-    justify-content: center;
+#frm{
+    align-self: center;
 }
+
 input{
     padding: 50px;
 }
