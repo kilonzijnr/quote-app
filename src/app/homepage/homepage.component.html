@@ -2,7 +2,7 @@
 
   <body>
     <div class="">
-      <h1 class="">Quote Hub</h1>
+      <h1 class="">Slang-Urban Quotes</h1>
     </div>
 
     <p class="lead">
@@ -20,12 +20,14 @@
       of encouragement.
     </p>
     <hr />
+    <br><br>
     <div class="container"> 
       <div class="row">
         <div class="col-md-8">
-          <app-quoteform (addQuote)="addNewQuote($event)" style="align-self: center"></app-quoteform>
+          <app-quoteform (addQuote)="addNewQuote($event)" style="align-self: center" ></app-quoteform>
         </div>
       </div>
+      <br><br>
       <div class="row">
         <div class="col-md-3 col-lg-4 col-sm-12" *ngFor="let Quote of quotes; let i = index">
           <div class="card-mb-3">
