@@ -21,8 +21,8 @@
     <div *ngFor='let Quote of quotes;let i = index'>
       <ul>
       <li>{{Quote.name}} </li>
-      <button (click)='upvote(i)'><img src="./assets/icons/like.png" alt="">{{Quote.upvote}}</button>
-      <button (click)='downvote(i)'><img src="./assets/icons/dislike.png" alt="">{{Quote.downvote}}</button>
+      <button (click)='upvote(i)'><img src="./assets/icons/like.png" alt=""height="20vh" width="20vh">{{Quote.upvote}}</button>
+      <button (click)='downvote(i)'><img src="./assets/icons/dislike.png" alt=""height="20vh" width="20vh">{{Quote.downvote}}</button>
       <button (click)= 'toggleDetails(i)'class="btn btn-primary">Details</button>
       <div *ngIf ='Quote.showDetails'>
         <app-quotedetail [quote]='Quote' (isComplete) = 'deleteQuote($event,i)'></app-quotedetail>
