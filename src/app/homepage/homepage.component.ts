@@ -52,6 +52,12 @@ export class HomepageComponent implements OnInit {
       }
     }
   }
+upvote(index:any){
+  this.quotes[index].upvote++;
+}
+downvote(index:any){
+  this.quotes[index].downvote++;
+}
 
   constructor() {}
 
