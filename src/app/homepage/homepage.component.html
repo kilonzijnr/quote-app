@@ -23,7 +23,7 @@
       <li>{{Quote.name}} </li>
       <button (click)= 'toggleDetails(i)'class="btn btn-primary">Details</button>
       <div *ngIf ='Quote.showDetails'>
-        <app-quotedetail [quote]='Quote'></app-quotedetail>
+        <app-quotedetail [quote]='Quote' (isComplete) = 'deleteQuote($event,i)'></app-quotedetail>
         
       </div>
      
