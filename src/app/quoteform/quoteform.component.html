@@ -2,7 +2,7 @@
     <div class="form-group" >
         <label for="description" class="text-light">Quote:</label>
         <br>
-        <input class="form-control"  type="text" name="name" id="name" rows="5"
+        <input class="form-control"  type="text" autocomplete="off" name="name" id="name" rows="5"
          required [(ngModel)]="newQuote.name"#name='ngModel'> 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Enter A Quote</p>
@@ -11,7 +11,7 @@
     <div class="form-group">
         <label for="author" class="text-light">Author:</label>
         <br>
-        <input class="form-control" name="Author" id="author" rows="5"
+        <input class="form-control" autocomplete="off" name="Author" id="author" rows="5"
         required [(ngModel)]="newQuote.Author"#Author='ngModel'> 
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Enter The Authors Name</p>
@@ -20,7 +20,7 @@
     <div class="form-group">
         <label for="author" class="text-light">Sumitted By:</label>
         <br>
-        <input class="form-control" name="User" id="User" rows="5"
+        <input class="form-control" autocomplete="off" name="User" id="User" rows="5"
          required [(ngModel)]="newQuote.User"#User='ngModel'>
         <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
             <p>Enter Submitors Name</p>
