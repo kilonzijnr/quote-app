@@ -12,7 +12,7 @@ export class HomepageComponent implements OnInit {
   quotes: Quote[] = [
     new Quote(
       1,
-      'Success is a do it yourself project',
+      'Intoxicated people,children and leggings always tell the truth!😂',
       'Derick Monu',
       'Victor Kilonzi',
       new Date(2021, 2, 17),
@@ -21,10 +21,46 @@ export class HomepageComponent implements OnInit {
     ),
     new Quote(
       2,
-      'Dont loose track over a passing storm',
-      'Alex Karumbi',
+      'You are always responsible of how you act no matter how you feel!✊',
       'James Ngangi',
+      'Jabali Lionel',
       new Date(2020, 3, 1),
+      0,
+      0
+    ),
+    new Quote(
+      3,
+      'Leaardership is Gold.!✅🤌',
+      'Mary Ngao',
+      'Danson Mumo',
+      new Date(2021, 2, 17),
+      0,
+      0
+    ),
+    new Quote(
+      4,
+      'Your intentions and goals determine your growth🤞👌',
+      'Benson Kilonzi',
+      'Mercy Clara',
+      new Date(2021, 2, 17),
+      0,
+      0
+    ),
+    new Quote(
+      5,
+      'Your beauty is in your brains.Your looks are just a great bonus!❤️🤏',
+      'Elizabeth Mugoya',
+      'Faraja Bigman',
+      new Date(2021, 2, 17),
+      0,
+      0
+    ),
+    new Quote(
+      6,
+      'You can nevr buy love.Show it trough theefforts you put toward your actions!😊🧡',
+      'Peninah Martha',
+      'Titus Mutinda',
+      new Date(2021, 2, 17),
       0,
       0
     ),
@@ -52,14 +88,14 @@ export class HomepageComponent implements OnInit {
       }
     }
   }
-upvote(index:any){
-  this.quotes[index].upvote++;
-}
-downvote(index:any){
-  this.quotes[index].downvote++;
-}
+  upvote(index: any) {
+    this.quotes[index].upvote++;
+  }
+  downvote(index: any) {
+    this.quotes[index].downvote++;
+  }
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }
