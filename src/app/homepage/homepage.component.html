@@ -16,6 +16,7 @@
     encouragement.
   </p>
   <hr>
+  <app-quoteform (addQuote)='addNewQuote($event)'></app-quoteform>
   <ul>
     <div *ngFor='let Quote of quotes;let i = index'>
       <ul>
@@ -23,10 +24,12 @@
       <button (click)= 'toggleDetails(i)'class="btn btn-primary">Details</button>
       <div *ngIf ='Quote.showDetails'>
         <app-quotedetail [quote]='Quote'></app-quotedetail>
+        
       </div>
-      
+     
 </ul>
 </div>
 </ul>
+
 </body>
    
