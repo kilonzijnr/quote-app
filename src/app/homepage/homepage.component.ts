@@ -57,7 +57,7 @@ export class HomepageComponent implements OnInit {
     ),
     new Quote(
       6,
-      'You can nevr buy love.Show it trough theefforts you put toward your actions!😊🧡',
+      'You can never buy love.Show it through the efforts you put towards your actions!😊🧡',
       'Peninah Martha',
       'Titus Mutinda',
       new Date(2021, 2, 17),

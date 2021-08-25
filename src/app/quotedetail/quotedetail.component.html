@@ -1,5 +1,6 @@
-<p><b><i>Quote ID: </i></b>{{ quote.id }}</p>
+<p><b><i>Quote ID: </i></b> {{ quote.id }}</p>
+<p><b>Quote Author:</b> {{quote.Author}}</p>
 <p><b><i>Date:</i></b> {{ quote.Date }}</p>
 <p><b><i>Upvotes:</i></b> {{ quote.upvote }}</p>
-<p><b><i>Downvotes: </i></b>{{ quote.downvote }}</p>
+<p><b><i>Downvotes: </i></b> {{ quote.downvote }}</p>
 <button (click)= 'quoteDelete(true)' class="btn btn-primary">Delete Quote</button>
