@@ -1,5 +1,3 @@
-<body>
-
   <body>
     <div class="">
       <h1 class="">Slang-Urban Quotes</h1>
@@ -20,16 +18,22 @@
       of encouragement.
     </p>
     <hr />
-    <br><br>
-    <div class="container"> 
+    <br /><br />
+    <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <app-quoteform (addQuote)="addNewQuote($event)" style="align-self: center" ></app-quoteform>
+          <app-quoteform
+            (addQuote)="addNewQuote($event)"
+            style="align-self: center"
+          ></app-quoteform>
         </div>
       </div>
-      <br><br>
+      <br /><br />
       <div class="row">
-        <div class="col-md-3 col-lg-4 col-sm-12" *ngFor="let Quote of quotes; let i = index">
+        <div
+          class="col-md-3 col-lg-4 col-sm-12"
+          *ngFor="let Quote of quotes; let i = index"
+        >
           <div class="card-mb-3">
             <div class="card-header">Posted By: {{ Quote.User }}</div>
             <div class="card-title">
@@ -37,26 +41,37 @@
             </div>
             <div class="card-body d-flex justify-content-between">
               <button (click)="upvote(i)">
-                <img src="./assets/icons/like.png" alt="" height="20vh" width="20vh" />{{ Quote.upvote }}
+                <img
+                  src="./assets/icons/like.png"
+                  alt=""
+                  height="20vh"
+                  width="20vh"
+                />{{ Quote.upvote }}
               </button>
               <button (click)="downvote(i)">
-                <img src="./assets/icons/dislike.png" alt="" height="20vh" width="20vh" />{{ Quote.downvote }}
+                <img
+                  src="./assets/icons/dislike.png"
+                  alt=""
+                  height="20vh"
+                  width="20vh"
+                />{{ Quote.downvote }}
               </button>
             </div>
-            <br>
+            <br />
             <div class="text-center">
               <button (click)="toggleDetails(i)" class="btn btn-primary">
                 Details
               </button>
             </div>
-         
+
             <div *ngIf="Quote.showDetails">
-              <app-quotedetail [quote]="Quote" (isComplete)="deleteQuote($event, i)"></app-quotedetail>
+              <app-quotedetail
+                [quote]="Quote"
+                (isComplete)="deleteQuote($event, i)"
+              ></app-quotedetail>
             </div>
           </div>
         </div>
       </div>
     </div>
-
-   
   </body>
